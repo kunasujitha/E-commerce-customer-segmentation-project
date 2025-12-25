@@ -34,7 +34,7 @@ with st.sidebar:
     database = st.text_input("Database", "flipkart2")
     username = st.text_input("Username", "sa")
     password = st.text_input("Password", "sujitha123", type="password")
-    driver = st.text_input("Driver", "ODBC Driver 18 for SQL Server")
+    driver = st.text_input("Driver", "ODBC+Driver+18+for+SQL+Server")
 
     if st.button("🔗 Connect to Database"):
         try:
@@ -159,4 +159,5 @@ if "db_engine" in st.session_state:
 
 
     st.info(f"📁 File saved at: {os.path.abspath(csv_path)}")
+
 
